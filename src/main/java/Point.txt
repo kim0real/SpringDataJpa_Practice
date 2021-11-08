@@ -1,0 +1,7 @@
+- Test Build 속도 향상
+디폴트는 gradle까지 읽어 느리기 때문에 Settings - build 검색 - Build, Execution, Deployment - Gradle에서
+Build and run using, Run tests using 모두 Intellij IDEA로 바꿔준다
+
+- lombok 활성화
+annotation processors - Enable annotation processing을 켜준다.
+
