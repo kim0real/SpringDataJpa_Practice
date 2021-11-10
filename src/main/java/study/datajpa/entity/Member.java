@@ -12,6 +12,10 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @ToString(of = {"id", "uesrname", "age"})
+@NamedQuery( // 거의 사용하지 않는다. 보통 Repository 메소드에 쿼리를 정의하는 방법을 사용한다.
+        name="Member.findByUsername",
+        query="select m from Member m where m.username = :username"
+)
 public class Member {
     @Id
     @GeneratedValue
